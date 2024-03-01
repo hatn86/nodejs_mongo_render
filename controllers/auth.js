@@ -183,6 +183,8 @@ exports.postSignup = (req, res, next) => {
       return user.save();
     })
     .then(async (result) => {
+      res.redirect("/login");
+      return;
       /**
        * Lấy AccessToken từ RefreshToken (bởi vì Access Token cứ một khoảng thời gian ngắn sẽ bị hết hạn)
        * Vì vậy mỗi lần sử dụng Access Token, chúng ta sẽ generate ra một thằng mới là chắc chắn nhất.

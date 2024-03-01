@@ -23,6 +23,9 @@ console.log(process.env.NODE_ENV);
 // const MONGODB_URI = `mongodb://127.0.0.1:27017/${process.env.MONGO_DEFAULT_DB}`; //"mongodb://127.0.0.1:27017/mongodb";
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@nodejs.t7hxuej.mongodb.net/${process.env.MONGO_DEFAULT_DB}?retryWrites=true&w=majority`;
 
+console.log(process.env.MONGO_DEFAULT_DB);
+console.log(MONGODB_URI);
+
 const app = express();
 const store = new MongoDBStore({
   uri: MONGODB_URI,

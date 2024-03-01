@@ -1,6 +1,6 @@
 {
   "env": {
-    "MONGO_DEFAULT_DB": "mongodb",
+    "MONGO_DEFAULT_DB": "shop",
     "STRIPE_API_KEY": "sk_test_51OmTYfKbnEWsy4ldyaPFCrvf3hqIIzc0JIlzNMajXuC0BXj80L1md4u0uCxbnUvUUcPlOxwwpL2m5Wvq2AG9neib00f5cyiYHK",
     "NODE_ENV": "production"
   }
