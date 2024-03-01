@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon app.js",
+    "start": "node app.js",
+    "start-server": "SET NODE_ENV=production & SET MONGO_DEFAULT_DB=mongodb & SET STRIPE_API_KEY=sk_test_51OmTYfKbnEWsy4ldyaPFCrvf3hqIIzc0JIlzNMajXuC0BXj80L1md4u0uCxbnUvUUcPlOxwwpL2m5Wvq2AG9neib00f5cyiYHK & node app.js"
+  },
+  "author": "Maximilian Schwarzmüller",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "google-auth-library": "^9.5.0",
+    "helmet": "^7.1.0",
+    "mongodb": "^3.1.6",
+    "mongoose": "^8.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.8",
+    "pdfkit": "^0.14.0",
+    "stripe": "^14.17.0"
+  }
+}
