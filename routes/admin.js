@@ -21,10 +21,10 @@ router.post(
   [
     body("title")
       .trim()
-      .matches(/^[a-zA-Z0-9 ]+$/)
-      .withMessage(
-        "Title has only number, letters, space and no special characters."
-      )
+      // .matches(/^[a-zA-Z0-9 ]+$/)
+      // .withMessage(
+      //   "Title has only number, letters, space and no special characters."
+      // )
       .isLength({ min: 3 })
       .withMessage("Title has at least 3 characters."),
     // body("imageUrl", "Invalid Url").trim().isURL(),
